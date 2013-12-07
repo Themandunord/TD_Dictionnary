@@ -24,14 +24,15 @@
 1385484606 source:c:\users\rémy\documents\cpp\td_cpp\dictionnary\src\dictionary.cpp
 	"../include/Dictionary.h"
 
-1386450854 source:c:\users\rémy\documents\github\td_dictionnary\main.cpp
+1386452150 source:c:\users\rémy\documents\github\td_dictionnary\main.cpp
 	<iostream>
 	"include/Dictionary.h"
 
-1386449657 c:\users\rémy\documents\github\td_dictionnary\include\dictionary.h
+1386452133 c:\users\rémy\documents\github\td_dictionnary\include\dictionary.h
 	"Base.h"
 	<map>
 	<iterator>
+	"DictionaryException.h"
 
 1386444137 c:\users\rémy\documents\github\td_dictionnary\include\base.h
 	<string>
@@ -47,6 +48,13 @@
 1386444137 source:c:\users\rémy\documents\github\td_dictionnary\src\class.cpp
 	"../include/Class.h"
 
-1386450999 source:c:\users\rémy\documents\github\td_dictionnary\src\dictionary.cpp
+1386452110 source:c:\users\rémy\documents\github\td_dictionnary\src\dictionary.cpp
 	"../include/Dictionary.h"
+
+1386452349 source:c:\users\rémy\documents\github\td_dictionnary\src\dictionaryexception.cpp
+	"../include/DictionaryException.h"
+
+1386452780 c:\users\rémy\documents\github\td_dictionnary\include\dictionaryexception.h
+	<sstream>
+	<exception>
 

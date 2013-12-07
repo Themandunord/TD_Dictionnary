@@ -31,6 +31,7 @@ string Dictionary::Translate(const string& str) const
 {
     const_iterator it;
     it = words.find(str);
+    if(it == words.end()) throw DictionaryException(str + "is not in this dictionary...");
     return it->second;
 }
 

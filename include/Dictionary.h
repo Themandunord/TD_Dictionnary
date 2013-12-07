@@ -3,6 +3,7 @@
 #include "Base.h"
 #include <map>
 #include <iterator>
+#include "DictionaryException.h"
 
 using namespace std;
 
