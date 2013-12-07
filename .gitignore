@@ -218,3 +218,5 @@ pip-log.txt
 ## Code::Blocks
 #############
 *.depend
+.depend
+depend
