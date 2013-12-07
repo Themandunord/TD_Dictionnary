@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1385484835 source:c:\users\rémy\documents\cpp\td_cpp\dictionnary\main.cpp
+	<iostream>
+	"include/Dictionary.h"
+
+1385479288 source:c:\users\rémy\documents\cpp\td_cpp\dictionnary\src\base.cpp
+	"../include/Base.h"
+	<sstream>
+
+1385479228 c:\users\rémy\documents\cpp\td_cpp\dictionnary\include\base.h
+	<string>
+	<iostream>
+	"class.h"
+
+1385479341 c:\users\rémy\documents\cpp\td_cpp\dictionnary\include\class.h
+
+1385479392 source:c:\users\rémy\documents\cpp\td_cpp\dictionnary\src\class.cpp
+	"../include/Class.h"
+
+1385484047 c:\users\rémy\documents\cpp\td_cpp\dictionnary\include\dictionary.h
+	"Base.h"
+	<map>
+
+1385484606 source:c:\users\rémy\documents\cpp\td_cpp\dictionnary\src\dictionary.cpp
+	"../include/Dictionary.h"
+
