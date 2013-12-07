@@ -32,13 +32,12 @@ string Dictionary::Translate(const string& str) const
     return it->second;
 }
 
-ostream& Dictionary::PrintOn(ostream& os) const
-{
-    for(const_iterator it=words.begin();it != words.end();++it)
-    os << endl << (*it).first <<'\t'<< (*it).second;
+ostream& Dictionary::PrintOn(ostream& os) const{
+    for(const_iterator it = words.begin(); it != words.end(); ++it){
+        os << endl << "--FRANCAIS-- : " <<  (*it).first << "\t--ANGLAIS-- : " << (*it).second;
+    }
     return os;
 }
-
 istream& Dictionary::ReadFrom(istream& is)
 {
 

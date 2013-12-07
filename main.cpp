@@ -5,14 +5,27 @@ using namespace std;
 
 int main()
 {
-    Dictionary dico;
-    //dico.Insert("Bonjour","Hello");
-    //dico.Insert("Au Revoir","GoodBye");
-    //dico.Insert("Remy","Remy");
-    cout << dico.PrintOn(cout) << "test";
-    //dico.Remove("Remy");
-    //cout << dico.PrintOn(cout);
-    //cout <<"Bonjour en anglais: " << dico.Translate("Bonjour");
+    cout << "------------DICTIONARY------------" << endl << "----------LESPAGNOL-REMY----------" << endl << endl;
 
+    cout << "---------INIT--DICTIONARY---------" << endl;
+    Dictionary dico;
+    dico.Insert("Bonbons","Candies");
+    dico.Insert("Bonjour","Hello");
+    dico.Insert("Remy","Remy");
+    dico.Insert("Maison","House");
+
+    cout << dico << endl;
+    cout << "---TAILLE--- : " << dico.Size() << endl << endl;
+
+    cout << "--------MINIMAL DICTIONARY--------" << endl;
+    dico.Remove("Remy");
+    cout << dico <<endl;
+    cout << "---TAILLE--- : " << dico.Size() << endl << endl;
+    cout << endl <<"----> Bonjour' en Anglais:  " << dico.Translate("Bonjour") << endl << endl;
+
+    cout << "---------CLEAR-DICTIONARY---------";
+    dico.Flush();
+    cout << dico <<endl;
+    cout << "---TAILLE--- : " << dico.Size() << endl << endl;
     return 0;
 }
