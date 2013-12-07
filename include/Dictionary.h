@@ -2,6 +2,7 @@
 #define DICTIONARY_H
 #include "Base.h"
 #include <map>
+#include <iterator>
 
 using namespace std;
 

@@ -27,5 +27,11 @@ int main()
     dico.Flush();
     cout << dico <<endl;
     cout << "---TAILLE--- : " << dico.Size() << endl << endl;
+
+    cout << "--------ISTREAM-DICTIONARY--------" << endl;
+    Dictionary iDico(cin);
+    cout << iDico << endl << endl;
+    cin >> iDico;
+    cout << iDico << endl << endl;
     return 0;
 }

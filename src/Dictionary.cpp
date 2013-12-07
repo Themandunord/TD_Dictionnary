@@ -3,7 +3,9 @@
 Dictionary::Dictionary()
 {}
 Dictionary::Dictionary(istream& is)
-{}
+{
+    ReadFrom(is);
+}
 
 void Dictionary::Flush()
 {
@@ -40,7 +42,19 @@ ostream& Dictionary::PrintOn(ostream& os) const{
 }
 istream& Dictionary::ReadFrom(istream& is)
 {
+    istream_iterator<string> eos;
+    istream_iterator<string> it(is);
+    string str,trad_str;
 
+    while(1)
+    {
+        if(*it != "q") str = (*it);
+        else break;
+        ++it;
+        trad_str = (*it++);
+        Insert(str,trad_str);
+    }
+    return is;
 }
 
 istream& Dictionary::ReadPair(istream& is)
@@ -50,5 +64,5 @@ istream& Dictionary::ReadPair(istream& is)
 
 istream& operator >> (istream& is, Dictionary& dico)
 {
-
+    dico.ReadFrom(is);
 }
